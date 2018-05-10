@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+</head>
+<body>
+
+<table id="dynamicTable" border="1">
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+</table>
+<br>
+
+<button onclick="addRow()">Add a new row</button>
+
+<script>
+
+function addRow() 
+{
+	var table = document.getElementById("dynamicTable");
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "New Cell";
+    cell2.innerHTML = "New Cell";
+}
+</script>
+
+</body>
+</html>
